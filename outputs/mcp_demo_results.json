@@ -5,8 +5,8 @@
       {
         "name": "Web Search",
         "arguments": {
-          "max_results": 1,
-          "query": "latest stable version of Python programming language notable features"
+          "query": "latest stable version of Python programming language notable features",
+          "max_results": 1
         },
         "result": {
           "results": [
@@ -30,26 +30,26 @@
       {
         "name": "Web Search",
         "arguments": {
-          "query": "current population of Tokyo + recent news",
-          "max_results": 2
+          "max_results": 2,
+          "query": "current population of Tokyo + recent news"
         },
         "result": {
           "results": [
             {
               "title": "Demographics of Tokyo - Wikipedia",
               "url": "https://en.wikipedia.org/wiki/Demographics_of_Tokyo",
-              "snippet": "4 days ago - The demography of Tokyo is analysed by the Tokyo Metropolitan Government and data is produced for each of the Special wards of Tokyo, the Western Tokyo and the Tokyo Islands, and for all of Tokyo prefecture as a whole. Statistical information is produced about the size and geographical breakdown of the population, the number of people entering and leaving country and the number of people in each demographic subgroup."
+              "snippet": "The demography of Tokyo is analysed by the Tokyo Metropolitan Government and data is produced for each of the Special wards of Tokyo, the Western Tokyo and the Tokyo Islands, and for all of Tokyo prefecture as a whole. [1] Statistical information is produced about the size and geographical breakdown of the population, the number of people entering and leaving country and the number of people ..."
             },
             {
               "title": "Tokyo Population 2026",
               "url": "https://worldpopulationreview.com/cities/japan/tokyo",
-              "snippet": "1 week ago - These population values and projections ... estimates, the 23 wards that make up the city of Tokyo had an approximate 2016 population of 9,262,046...."
+              "snippet": "A recent study by the Tokyo Metropolitan Government, which included a group of academics and city officials, estimated the population of Tokyo in 2100. The group estimates that Tokyo\u2019s population will be just 7.13 million, compared to 13.16 million as of the 2010 census."
             }
           ]
         }
       }
     ],
-    "final_answer": "The current population of Tokyo is approximately 9.3 million people (as of 2020). \n\nOne recent news headline about Tokyo is: \"Tokyo's Population to Reach 10 Million by 2030\" from World Population Review (https://worldpopulationreview.com/cities/japan/tokyo).\n\nSource:\n- Wikipedia: Demographics of Tokyo (https://en.wikipedia.org/wiki/Demographics_of_Tokyo)\n- World Population Review: Tokyo Population 2026 (https://worldpopulationreview.com/cities/japan/tokyo)",
+    "final_answer": "Based on the web search results, I found the current population of Tokyo is approximately 13.16 million (as of the 2010 census). However, a recent study estimates that the population will be around 7.13 million in 2100.\n\nAs for a recent news headline about Tokyo, I couldn't find any specific information on recent news headlines. However, I can suggest checking online news sources such as The Japan Times or NHK World-Japan for up-to-date information on current events in Tokyo.\n\nSource:\n- Wikipedia: Demographics of Tokyo\n- World Population Review: Tokyo Population 2026",
     "success": true,
     "error": "",
     "rounds": 2

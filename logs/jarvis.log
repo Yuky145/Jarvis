@@ -72,3 +72,41 @@
 2026-06-15 22:01:56,978 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
 2026-06-15 22:01:58,155 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
 2026-06-15 22:01:58,984 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram
+2026-06-15 23:45:35,169 | INFO    | jarvis.benchmarks.plots | Saved plot quant_size_vs_speed
+2026-06-15 23:45:35,791 | INFO    | jarvis.benchmarks.plots | Saved plot quant_tradeoff
+2026-06-15 23:45:36,658 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
+2026-06-15 23:45:37,782 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
+2026-06-15 23:45:38,612 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram
+2026-06-15 23:47:06,551 | INFO    | jarvis.benchmarks.plots | Saved plot quant_size_vs_speed
+2026-06-15 23:47:07,179 | INFO    | jarvis.benchmarks.plots | Saved plot quant_tradeoff
+2026-06-15 23:47:08,038 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
+2026-06-15 23:47:09,165 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
+2026-06-15 23:47:09,999 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram
+2026-06-15 23:48:07,741 | INFO    | chromadb.telemetry.product.posthog | Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-15 23:48:09,644 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:48:09,746 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:48:10,161 | INFO    | jarvis.rag.corpus | Saved attention_is_all_you_need.pdf (2163.3 KB)
+2026-06-15 23:48:10,444 | INFO    | jarvis.rag.corpus | Saved bert.pdf (757.0 KB)
+2026-06-15 23:48:11,131 | INFO    | jarvis.rag.corpus | Saved gpt3_few_shot_learners.pdf (6609.4 KB)
+2026-06-15 23:48:14,540 | INFO    | jarvis.rag.corpus | Saved llama2.pdf (13341.1 KB)
+2026-06-15 23:48:14,786 | INFO    | jarvis.rag.corpus | Saved rag_knowledge_intensive.pdf (864.6 KB)
+2026-06-15 23:48:15,286 | INFO    | jarvis.rag.corpus | Saved lora.pdf (1571.8 KB)
+2026-06-15 23:48:49,809 | INFO    | chromadb.telemetry.product.posthog | Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-15 23:48:50,624 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:48:50,632 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:48:51,260 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:49:01,386 | INFO    | jarvis.rag.corpus | Loaded 7 documents from /mnt/c/Users/ricky/Downloads/local-jarvis/data/corpus
+2026-06-15 23:50:09,592 | ERROR   | chromadb.telemetry.product.posthog | Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+2026-06-15 23:53:01,164 | INFO    | jarvis.benchmarks.plots | Saved plot quant_size_vs_speed
+2026-06-15 23:53:01,787 | INFO    | jarvis.benchmarks.plots | Saved plot quant_tradeoff
+2026-06-15 23:53:02,641 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
+2026-06-15 23:53:03,782 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
+2026-06-15 23:53:04,606 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram
+2026-06-15 23:54:42,188 | INFO    | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20stable%20version%20of%20Python%20programming%20language%20notable%20features 200
+2026-06-15 23:54:44,913 | INFO    | primp | response: https://grokipedia.com/api/typeahead?query=latest+stable+version+of+Python+programming+language+notable+features&limit=1 200
+2026-06-15 23:54:45,357 | INFO    | primp | response: https://search.yahoo.com/search;_ylt=6nMitlccxTUnmzuhMDqrUonV;_ylu=CNQ1_e3rXBCXfOcCKq8OmpiGvNhyePMxWfoFrYbTcC4Tq_g?p=latest+stable+version+of+Python+programming+language+notable+features 200
+2026-06-15 23:55:06,132 | INFO    | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=current%20population%20of%20Tokyo%20%2B%20recent%20news 200
+2026-06-15 23:55:06,432 | INFO    | primp | response: https://grokipedia.com/api/typeahead?query=current+population+of+Tokyo+%2B+recent+news&limit=1 200
+2026-06-15 23:55:36,438 | INFO    | ddgs.ddgs | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=current+population+of+Tokyo+%2B+recent+news) > operation timed out'))
+2026-06-15 23:55:36,906 | INFO    | primp | response: https://search.yahoo.com/search;_ylt=_HWVFVmO6dmEgCkXYLnRN9If;_ylu=DfBafWDTjt22XYqkWRFo1-J1IWOY3muqxXBHioKmRhguSW8?p=current+population+of+Tokyo+%2B+recent+news 200
+2026-06-15 23:55:37,203 | INFO    | httpx | HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
