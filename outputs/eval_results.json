@@ -1,0 +1,289 @@
+{
+  "summary": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "total": 23,
+    "passed": 20,
+    "overall_success_rate": 0.87,
+    "avg_latency_s": 10.73,
+    "total_tokens": 4243,
+    "by_category": {
+      "chat": {
+        "n": 6,
+        "passed": 6,
+        "success_rate": 1.0,
+        "avg_latency_s": 5.46,
+        "avg_tokens": 152.7
+      },
+      "rag": {
+        "n": 5,
+        "passed": 4,
+        "success_rate": 0.8,
+        "avg_latency_s": 15.29,
+        "avg_tokens": 208.4
+      },
+      "tool": {
+        "n": 5,
+        "passed": 4,
+        "success_rate": 0.8,
+        "avg_latency_s": 16.12,
+        "avg_tokens": 148.4
+      },
+      "multi_step": {
+        "n": 4,
+        "passed": 3,
+        "success_rate": 0.75,
+        "avg_latency_s": 9.28,
+        "avg_tokens": 207.2
+      },
+      "adversarial": {
+        "n": 3,
+        "passed": 3,
+        "success_rate": 1.0,
+        "avg_latency_s": 6.63,
+        "avg_tokens": 238.0
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "chat_01",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 3.87,
+      "tokens": 214,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "chat_02",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 2.78,
+      "tokens": 262,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "chat_03",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 3.11,
+      "tokens": 41,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "chat_04",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 8.68,
+      "tokens": 174,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "chat_05",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 8.8,
+      "tokens": 131,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "chat_06",
+      "category": "chat",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 5.55,
+      "tokens": 94,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "rag_01",
+      "category": "rag",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 19.54,
+      "tokens": 192,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "rag_02",
+      "category": "rag",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 18.99,
+      "tokens": 299,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "rag_03",
+      "category": "rag",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 14.57,
+      "tokens": 118,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "rag_04",
+      "category": "rag",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 10.1,
+      "tokens": 122,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "rag_05",
+      "category": "rag",
+      "passed": false,
+      "reason": "missing required keyword/tool",
+      "latency_s": 13.25,
+      "tokens": 311,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "tool_01",
+      "category": "tool",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 20.45,
+      "tokens": 205,
+      "tools_used": [
+        "web_search"
+      ],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "tool_02",
+      "category": "tool",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 12.28,
+      "tokens": 97,
+      "tools_used": [
+        "web_search"
+      ],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "tool_03",
+      "category": "tool",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 20.65,
+      "tokens": 197,
+      "tools_used": [
+        "web_search"
+      ],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "tool_04",
+      "category": "tool",
+      "passed": false,
+      "reason": "missing required keyword/tool",
+      "latency_s": 7.55,
+      "tokens": 163,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "tool_05",
+      "category": "tool",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 19.68,
+      "tokens": 80,
+      "tools_used": [
+        "web_search"
+      ],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "multi_01",
+      "category": "multi_step",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 4.63,
+      "tokens": 288,
+      "tools_used": [
+        "web_search"
+      ],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "multi_02",
+      "category": "multi_step",
+      "passed": false,
+      "reason": "missing required keyword/tool",
+      "latency_s": 18.5,
+      "tokens": 312,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "multi_03",
+      "category": "multi_step",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 7.36,
+      "tokens": 105,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "multi_04",
+      "category": "multi_step",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 6.62,
+      "tokens": 124,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "adv_01",
+      "category": "adversarial",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 3.86,
+      "tokens": 256,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "adv_02",
+      "category": "adversarial",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 8.75,
+      "tokens": 316,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    },
+    {
+      "id": "adv_03",
+      "category": "adversarial",
+      "passed": true,
+      "reason": "passed",
+      "latency_s": 7.29,
+      "tokens": 142,
+      "tools_used": [],
+      "response": "(sample response omitted)"
+    }
+  ]
+}

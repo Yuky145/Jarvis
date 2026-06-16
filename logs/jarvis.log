@@ -1,0 +1,74 @@
+2026-06-15 16:32:42,173 | INFO    | matplotlib.font_manager | generated new fontManager
+2026-06-15 16:33:12,344 | INFO    | jarvis.benchmarks.quantization | Model qwen2.5:7b-instruct-q8_0 not present — pulling.
+2026-06-15 16:33:12,347 | INFO    | jarvis.core.ollama_client | Pulling model qwen2.5:7b-instruct-q8_0 ...
+2026-06-15 16:49:24,955 | INFO    | jarvis.benchmarks.plots | Saved plot quant_size_vs_speed
+2026-06-15 16:49:26,103 | INFO    | jarvis.benchmarks.plots | Saved plot quant_tradeoff
+2026-06-15 16:49:27,784 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
+2026-06-15 16:49:29,859 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
+2026-06-15 16:49:31,588 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram
+2026-06-15 16:50:54,767 | WARNING | primp.impersonate | Impersonate 'safari_15.6.1' does not exist, using 'random'
+2026-06-15 16:50:55,930 | INFO    | primp | response: https://duckduckgo.com/ 200
+2026-06-15 16:50:56,859 | INFO    | primp | response: https://links.duckduckgo.com/d.js?q=latest+stable+Python+version+2023&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-167676038051453302035503998918524547579&bing_market=wt-WT&ex=-1 202
+2026-06-15 16:50:56,862 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://links.duckduckgo.com/d.js?q=latest+stable+Python+version+2023&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-167676038051453302035503998918524547579&bing_market=wt-WT&ex=-1 202 Ratelimit
+2026-06-15 16:51:20,819 | INFO    | primp | response: https://duckduckgo.com/ 202
+2026-06-15 16:51:20,879 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://duckduckgo.com/ 202 Ratelimit
+2026-06-15 16:51:30,506 | INFO    | primp | response: https://duckduckgo.com/ 202
+2026-06-15 16:51:30,571 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://duckduckgo.com/ 202 Ratelimit
+2026-06-15 19:43:23,842 | WARNING | primp.impersonate | Impersonate 'chrome_105' does not exist, using 'random'
+2026-06-15 19:43:23,363 | INFO    | primp | response: https://duckduckgo.com/ 200
+2026-06-15 19:43:24,082 | INFO    | primp | response: https://links.duckduckgo.com/d.js?q=latest+stable+Python+version+2023&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-167679043651025475967729836147226100779&bing_market=wt-WT&ex=-1 202
+2026-06-15 19:43:24,084 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://links.duckduckgo.com/d.js?q=latest+stable+Python+version+2023&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-167679043651025475967729836147226100779&bing_market=wt-WT&ex=-1 202 Ratelimit
+2026-06-15 19:43:46,164 | INFO    | primp | response: https://duckduckgo.com/ 200
+2026-06-15 19:43:46,921 | INFO    | primp | response: https://links.duckduckgo.com/d.js?q=current+population+of+Tokyo+recent+news+headline&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-288379921747079821997324034438488841143&bing_market=wt-WT&ex=-1 202
+2026-06-15 19:43:46,923 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://links.duckduckgo.com/d.js?q=current+population+of+Tokyo+recent+news+headline&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-288379921747079821997324034438488841143&bing_market=wt-WT&ex=-1 202 Ratelimit
+2026-06-15 19:43:55,423 | INFO    | primp | response: https://duckduckgo.com/ 202
+2026-06-15 19:43:55,489 | ERROR   | jarvis.mcp.search_server | Search backend 'duckduckgo' failed: https://duckduckgo.com/ 202 Ratelimit
+2026-06-15 20:56:42,735 | WARNING | primp.impersonate | Impersonate 'firefox_133' does not exist, using 'random'
+2026-06-15 20:56:43,961 | INFO    | primp | response: https://lite.duckduckgo.com/lite/ 202
+2026-06-15 20:56:43,968 | INFO    | duckduckgo_search.DDGS | Error to search using lite backend: https://lite.duckduckgo.com/lite/ 202 Ratelimit
+2026-06-15 20:56:45,443 | INFO    | primp | response: https://html.duckduckgo.com/html 202
+2026-06-15 20:56:45,444 | INFO    | duckduckgo_search.DDGS | Error to search using html backend: https://html.duckduckgo.com/html 202 Ratelimit
+2026-06-15 20:56:45,445 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 1 falló: https://html.duckduckgo.com/html 202 Ratelimit. Esperando 1.2s...
+2026-06-15 20:56:47,559 | INFO    | primp | response: https://html.duckduckgo.com/html 202
+2026-06-15 20:56:47,560 | INFO    | duckduckgo_search.DDGS | Error to search using html backend: https://html.duckduckgo.com/html 202 Ratelimit
+2026-06-15 20:56:49,095 | INFO    | primp | response: https://lite.duckduckgo.com/lite/ 202
+2026-06-15 20:56:49,097 | INFO    | duckduckgo_search.DDGS | Error to search using lite backend: https://lite.duckduckgo.com/lite/ 202 Ratelimit
+2026-06-15 20:56:49,098 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 2 falló: https://lite.duckduckgo.com/lite/ 202 Ratelimit. Esperando 2.9s...
+2026-06-15 20:56:52,923 | INFO    | primp | response: https://lite.duckduckgo.com/lite/ 202
+2026-06-15 20:56:52,925 | INFO    | duckduckgo_search.DDGS | Error to search using lite backend: https://lite.duckduckgo.com/lite/ 202 Ratelimit
+2026-06-15 20:56:54,437 | INFO    | primp | response: https://html.duckduckgo.com/html 202
+2026-06-15 20:56:54,439 | INFO    | duckduckgo_search.DDGS | Error to search using html backend: https://html.duckduckgo.com/html 202 Ratelimit
+2026-06-15 20:56:54,440 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 3 falló: https://html.duckduckgo.com/html 202 Ratelimit. Esperando 4.4s...
+2026-06-15 20:56:59,463 | INFO    | primp | response: https://html.duckduckgo.com/html 202
+2026-06-15 20:56:59,464 | INFO    | duckduckgo_search.DDGS | Error to search using html backend: https://html.duckduckgo.com/html 202 Ratelimit
+2026-06-15 20:57:00,818 | INFO    | primp | response: https://lite.duckduckgo.com/lite/ 202
+2026-06-15 20:57:00,819 | INFO    | duckduckgo_search.DDGS | Error to search using lite backend: https://lite.duckduckgo.com/lite/ 202 Ratelimit
+2026-06-15 20:57:00,821 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 4 falló: https://lite.duckduckgo.com/lite/ 202 Ratelimit. Esperando 8.9s...
+2026-06-15 20:57:07,809 | ERROR   | jarvis.mcp.search_server | DuckDuckGo falló después de 4 intentos: https://lite.duckduckgo.com/lite/ 202 Ratelimit
+2026-06-15 20:59:23,780 | INFO    | primp | response: https://www.bing.com/search?q=latest+stable+Python+version+2025 200
+2026-06-15 20:59:38,961 | INFO    | primp | response: https://www.bing.com/search?q=latest+stable+Python+version+2025 200
+2026-06-15 21:00:40,740 | INFO    | primp | response: https://www.bing.com/search?q=latest+stable+Python+version+2025 200
+2026-06-15 21:05:12,502 | INFO    | primp | response: https://www.bing.com/search?q=Tokyo+population+2024 200
+2026-06-15 21:10:46,133 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 1 falló: DDGS.__init__() got an unexpected keyword argument 'headers'. Esperando 1.9s...
+2026-06-15 21:10:46,129 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 2 falló: DDGS.__init__() got an unexpected keyword argument 'headers'. Esperando 2.3s...
+2026-06-15 21:10:48,495 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 3 falló: DDGS.__init__() got an unexpected keyword argument 'headers'. Esperando 4.5s...
+2026-06-15 21:10:53,315 | WARNING | jarvis.mcp.search_server | DuckDuckGo intento 4 falló: DDGS.__init__() got an unexpected keyword argument 'headers'. Esperando 8.3s...
+2026-06-15 21:11:02,205 | ERROR   | jarvis.mcp.search_server | DuckDuckGo falló después de 4 intentos: DDGS.__init__() got an unexpected keyword argument 'headers'
+2026-06-15 21:12:24,186 | INFO    | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Tokyo%20population%202024 200
+2026-06-15 21:12:24,601 | INFO    | primp | response: https://grokipedia.com/api/typeahead?query=Tokyo+population+2024&limit=1 200
+2026-06-15 21:12:25,016 | INFO    | primp | response: https://www.startpage.com/ 200
+2026-06-15 21:12:25,243 | INFO    | primp | response: https://www.startpage.com/sp/search 200
+2026-06-15 21:12:25,729 | INFO    | primp | response: https://search.yahoo.com/search;_ylt=EpBPzH3cVbncEJMlcleoNxMN;_ylu=IhiQmO9jZYUE28OsfJEzFIophuZzRJmrzdg_yNsbgC983FY?p=Tokyo+population+2024 200
+2026-06-15 21:12:54,473 | INFO    | ddgs.ddgs | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Tokyo+population+2024) > operation timed out'))
+2026-06-15 21:12:55,495 | INFO    | primp | response: https://search.brave.com/search?q=Tokyo+population+2024&source=web 200
+2026-06-15 21:55:30,490 | INFO    | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20stable%20version%20of%20Python%20programming%20language%20notable%20features 200
+2026-06-15 21:55:30,886 | INFO    | primp | response: https://grokipedia.com/api/typeahead?query=latest+stable+version+of+Python+programming+language+notable+features&limit=1 200
+2026-06-15 21:55:31,472 | INFO    | primp | response: https://search.yahoo.com/search;_ylt=ROlhiSlAwm1swKoJr4mRdli-;_ylu=wFtG0kSZGHjBTuuAhEWzGgIXQ0GeT4XZ9hsR3Mn4C7LdZ_I?p=latest+stable+version+of+Python+programming+language+notable+features 200
+2026-06-15 21:55:50,652 | INFO    | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=current%20population%20of%20Tokyo%20%2B%20recent%20news 200
+2026-06-15 21:55:50,659 | INFO    | primp | response: https://grokipedia.com/api/typeahead?query=current+population+of+Tokyo+%2B+recent+news&limit=1 200
+2026-06-15 21:55:51,559 | INFO    | primp | response: https://search.brave.com/search?q=current+population+of+Tokyo+%2B+recent+news&source=web 200
+2026-06-15 22:01:55,401 | INFO    | jarvis.benchmarks.plots | Saved plot quant_size_vs_speed
+2026-06-15 22:01:56,032 | INFO    | jarvis.benchmarks.plots | Saved plot quant_tradeoff
+2026-06-15 22:01:56,978 | INFO    | jarvis.benchmarks.plots | Saved plot quant_quality_by_category
+2026-06-15 22:01:58,155 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_latency
+2026-06-15 22:01:58,984 | INFO    | jarvis.benchmarks.plots | Saved plot kv_context_vs_ram

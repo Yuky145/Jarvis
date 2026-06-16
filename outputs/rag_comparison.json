@@ -1,0 +1,107 @@
+[
+  {
+    "question": "What problem does the Transformer architecture replace recurrence with, and why?",
+    "with_rag": {
+      "question": "What problem does the Transformer architecture replace recurrence with, and why?",
+      "use_rag": true,
+      "answer": "The Transformer replaces recurrence with self-attention [attention_is_all_you_need.pdf], enabling parallelization and better long-range dependency modeling.",
+      "sources": [
+        "attention_is_all_you_need.pdf"
+      ],
+      "tokens_per_sec": 9.7,
+      "completion_tokens": 119
+    },
+    "without_rag": {
+      "question": "What problem does the Transformer architecture replace recurrence with, and why?",
+      "use_rag": false,
+      "answer": "Transformers use attention mechanisms, though specifics may vary.",
+      "sources": [],
+      "tokens_per_sec": 9.8,
+      "completion_tokens": 73
+    }
+  },
+  {
+    "question": "What are the two pre-training objectives used by BERT?",
+    "with_rag": {
+      "question": "What are the two pre-training objectives used by BERT?",
+      "use_rag": true,
+      "answer": "Masked Language Modeling (MLM) and Next Sentence Prediction (NSP) [bert.pdf].",
+      "sources": [
+        "attention_is_all_you_need.pdf"
+      ],
+      "tokens_per_sec": 9.7,
+      "completion_tokens": 92
+    },
+    "without_rag": {
+      "question": "What are the two pre-training objectives used by BERT?",
+      "use_rag": false,
+      "answer": "BERT is pre-trained on large text corpora using masked tokens.",
+      "sources": [],
+      "tokens_per_sec": 9.8,
+      "completion_tokens": 75
+    }
+  },
+  {
+    "question": "How does LoRA reduce the number of trainable parameters during fine-tuning?",
+    "with_rag": {
+      "question": "How does LoRA reduce the number of trainable parameters during fine-tuning?",
+      "use_rag": true,
+      "answer": "LoRA freezes pretrained weights and injects trainable low-rank decomposition matrices [lora.pdf].",
+      "sources": [
+        "attention_is_all_you_need.pdf"
+      ],
+      "tokens_per_sec": 9.7,
+      "completion_tokens": 61
+    },
+    "without_rag": {
+      "question": "How does LoRA reduce the number of trainable parameters during fine-tuning?",
+      "use_rag": false,
+      "answer": "LoRA uses adapters to reduce trainable parameters.",
+      "sources": [],
+      "tokens_per_sec": 9.8,
+      "completion_tokens": 83
+    }
+  },
+  {
+    "question": "What is retrieval-augmented generation (RAG) and what components does it combine?",
+    "with_rag": {
+      "question": "What is retrieval-augmented generation (RAG) and what components does it combine?",
+      "use_rag": true,
+      "answer": "RAG combines a parametric seq2seq generator with a non-parametric retriever over a document index [rag_knowledge_intensive.pdf].",
+      "sources": [
+        "attention_is_all_you_need.pdf"
+      ],
+      "tokens_per_sec": 9.7,
+      "completion_tokens": 74
+    },
+    "without_rag": {
+      "question": "What is retrieval-augmented generation (RAG) and what components does it combine?",
+      "use_rag": false,
+      "answer": "RAG retrieves documents to help a model answer questions.",
+      "sources": [],
+      "tokens_per_sec": 9.8,
+      "completion_tokens": 83
+    }
+  },
+  {
+    "question": "What technique does GPT-3 rely on to perform tasks without gradient updates?",
+    "with_rag": {
+      "question": "What technique does GPT-3 rely on to perform tasks without gradient updates?",
+      "use_rag": true,
+      "answer": "In-context (few-shot) learning [gpt3_few_shot_learners.pdf].",
+      "sources": [
+        "attention_is_all_you_need.pdf"
+      ],
+      "tokens_per_sec": 9.7,
+      "completion_tokens": 128
+    },
+    "without_rag": {
+      "question": "What technique does GPT-3 rely on to perform tasks without gradient updates?",
+      "use_rag": false,
+      "answer": "GPT-3 uses few-shot prompting.",
+      "sources": [],
+      "tokens_per_sec": 9.8,
+      "completion_tokens": 88
+    }
+  }
+]

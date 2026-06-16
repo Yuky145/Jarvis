@@ -1,0 +1,101 @@
+# =====================================================================
+# Local Jarvis — central configuration
+# Everything is CPU-friendly and tuned for a 16 GB RAM machine.
+# =====================================================================
+
+ollama:
+  host: "http://localhost:11434"
+  # Request timeout (seconds) for a single generation call.
+  request_timeout: 600
+  # Keep model resident between calls (Ollama "keep_alive").
+  keep_alive: "5m"
+
+# ---------------------------------------------------------------------
+# Models
+# Primary choice for 16 GB RAM / CPU-only inference.
+# Qwen 2.5 7B Instruct is the recommended default: strong quality, fits
+# comfortably under Q4_K_M (~4.7 GB) leaving headroom for the OS + RAG.
+# Llama 3.1 8B is provided as an alternative.
+# ---------------------------------------------------------------------
+models:
+  primary: "qwen2.5:7b-instruct"
+  alternative: "llama3.1:8b-instruct"
+  # Embedding model used by the RAG pipeline.
+  embedding: "nomic-embed-text"
+
+# ---------------------------------------------------------------------
+# Part A — quantization study
+# Each entry is an Ollama tag for the SAME base model in different
+# quantization levels. Edit `base` to switch model family.
+# ---------------------------------------------------------------------
+quantization:
+  base: "qwen2.5:7b-instruct"
+  levels:
+    - tag: "qwen2.5:7b-instruct-q8_0"
+      label: "Q8_0"
+    - tag: "qwen2.5:7b-instruct-q4_K_M"
+      label: "Q4_K_M"
+    - tag: "qwen2.5:7b-instruct-q3_K_M"
+      label: "Q3_K_M"
+    - tag: "qwen2.5:7b-instruct-q2_K"
+      label: "Q2_K"
+  # Number of tokens to generate per timed completion.
+  completion_tokens: 200
+  # Repeat each prompt N times and average (reduces noise).
+  repeats: 1
+
+# ---------------------------------------------------------------------
+# Part B — KV cache / context length study
+# ---------------------------------------------------------------------
+kv_cache:
+  model: "qwen2.5:7b-instruct-q4_K_M"
+  context_lengths: [512, 2048, 8192, 16384]
+  # Tokens to generate for the latency measurement at each context size.
+  gen_tokens: 128
+  # KV cache quantization types to compare. Requires a recent Ollama
+  # build with OLLAMA_FLASH_ATTENTION=1. "f16" is the baseline.
+  kv_cache_types: ["f16", "q8_0"]
+
+# ---------------------------------------------------------------------
+# Part C — RAG pipeline
+# ---------------------------------------------------------------------
+rag:
+  corpus_dir: "data/corpus"
+  vector_store_dir: "data/chroma"
+  collection_name: "jarvis_papers"
+  embedding_model: "nomic-embed-text"
+  chunk_size: 800        # tokens (approx) per chunk
+  chunk_overlap: 120     # token overlap between chunks
+  top_k: 4               # retrieved chunks per query
+  generation_model: "qwen2.5:7b-instruct-q4_K_M"
+
+# ---------------------------------------------------------------------
+# Part D — MCP web search tool
+# ---------------------------------------------------------------------
+mcp:
+  search_backend: "duckduckgo"   # duckduckgo | brave
+  brave_api_key_env: "BRAVE_API_KEY"
+  max_results: 5
+  fetch_page_chars: 2000
+  model: "llama3.1"
+# ---------------------------------------------------------------------
+# Part E — evaluation
+# ---------------------------------------------------------------------
+evaluation:
+  test_set: "data/test_set.json"
+  model: "qwen2.5:7b-instruct-q4_K_M"
+  output_dir: "outputs"
+
+# ---------------------------------------------------------------------
+# Generation defaults (deterministic for reproducible benchmarks)
+# ---------------------------------------------------------------------
+generation:
+  temperature: 0.0
+  top_p: 1.0
+  seed: 42
+
+paths:
+  results_dir: "benchmarks/results"
+  plots_dir: "benchmarks/plots"
+  outputs_dir: "outputs"
+  measurements_csv: "benchmarks/results/measurements.csv"

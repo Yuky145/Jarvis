@@ -1,0 +1,24 @@
+id,category,passed,latency_s,tokens,tools_used,reason
+chat_01,chat,True,3.87,214,,passed
+chat_02,chat,True,2.78,262,,passed
+chat_03,chat,True,3.11,41,,passed
+chat_04,chat,True,8.68,174,,passed
+chat_05,chat,True,8.8,131,,passed
+chat_06,chat,True,5.55,94,,passed
+rag_01,rag,True,19.54,192,,passed
+rag_02,rag,True,18.99,299,,passed
+rag_03,rag,True,14.57,118,,passed
+rag_04,rag,True,10.1,122,,passed
+rag_05,rag,False,13.25,311,,missing required keyword/tool
+tool_01,tool,True,20.45,205,web_search,passed
+tool_02,tool,True,12.28,97,web_search,passed
+tool_03,tool,True,20.65,197,web_search,passed
+tool_04,tool,False,7.55,163,,missing required keyword/tool
+tool_05,tool,True,19.68,80,web_search,passed
+multi_01,multi_step,True,4.63,288,web_search,passed
+multi_02,multi_step,False,18.5,312,,missing required keyword/tool
+multi_03,multi_step,True,7.36,105,,passed
+multi_04,multi_step,True,6.62,124,,passed
+adv_01,adversarial,True,3.86,256,,passed
+adv_02,adversarial,True,8.75,316,,passed
+adv_03,adversarial,True,7.29,142,,passed

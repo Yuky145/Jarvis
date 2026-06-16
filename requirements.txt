@@ -1,0 +1,31 @@
+# ---- Local Jarvis: pinned dependencies ----
+# Core LLM / HTTP
+ollama==0.3.3
+requests==2.32.3
+httpx==0.27.2
+
+# Data / numerics / plotting
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.2
+
+# System metrics
+psutil==6.0.0
+
+# RAG: embeddings + vector store + chunking
+chromadb==0.5.5
+tiktoken==0.7.0
+pypdf==4.3.1
+
+# MCP / tool calling web search
+duckduckgo-search==7.5.3
+beautifulsoup4==4.12.3
+
+# CLI niceties
+rich==13.8.0
+tqdm==4.66.5
+pyyaml==6.0.2
+click==8.1.7
+
+# Testing
+pytest==8.3.2

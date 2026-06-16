@@ -1,0 +1,9 @@
+experiment,model,kv_cache_type,context_length,approx_prompt_tokens,gen_tokens,tokens_per_sec,prompt_tokens_per_sec,ttft_proxy_s,eval_duration_s,wall_time_s,peak_ram_delta_mb,peak_ollama_rss_mb,system_total_ram_gb
+kv_cache,qwen2.5:7b-instruct-q4_K_M,f16,512,486,128,9.92,49.5,0.81,12.929,13.829,2750.0,5500.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,f16,2048,1945,128,9.13,45.5,2.56,14.066,16.466,2950.0,5900.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,f16,8192,7782,128,7.16,36.0,8.99,17.778,26.878,3600.0,7200.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,f16,16384,15564,128,5.6,27.0,19.8,23.704,43.504,4550.0,9100.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,q8_0,512,486,128,9.44,49.5,0.72,13.329,14.229,2750.0,5500.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,q8_0,2048,1945,128,8.67,45.5,2.45,14.501,16.901,2950.0,5900.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,q8_0,8192,7782,128,7.1,36.0,9.07,18.328,27.428,2808.0,5616.0,16.0
+kv_cache,qwen2.5:7b-instruct-q4_K_M,q8_0,16384,15564,128,5.06,27.0,19.75,24.437,44.237,3549.0,7098.0,16.0
